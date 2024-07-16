@@ -1,0 +1,14 @@
+linters:
+  enable:
+    - errorlint
+    - gofmt
+    - lll
+    - gosec
+linters-settings:
+  errorlint:
+    errorf: true
+    asserts: true
+    comparison: true
+  lll:
+    # GitHub recommended for code review
+    line-length: 125
