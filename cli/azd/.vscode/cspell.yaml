@@ -1,0 +1,114 @@
+import: ../../../.vscode/cspell.global.yaml
+words:
+  - backoff
+  - Canonicalize
+  - Codespace
+  - Codespaces
+  - devcontainers
+  - goversioninfo
+  - nosec
+  - Retryable
+  - runcontext
+  - azcloud
+  - usgovcloudapi
+  - chinacloudapi
+languageSettings:
+  - languageId: go
+    ignoreRegExpList:
+      - /mock.*/
+dictionaryDefinitions:
+  - name: azdProjectDictionary
+    path: ./cspell-azd-dictionary.txt
+    description: Custom Workspace Dictionary
+    addWords: true
+    scope: workspace
+dictionaries:
+  - azdProjectDictionary
+overrides:
+  - filename: internal/tracing/fields/domains.go
+    words:
+      - azmk
+      - azurecontainerapps
+      - azureedge
+      - azurefd
+      - cloudapp
+      - mediaservices
+      - msecnd
+  - filename: docs/docgen.go
+    words:
+      - alexwolf
+      - alexwolfmsft
+      - pname
+      - puichan
+      - devx
+      - azdevcli
+      - azdeveloper
+      - hannahhunter
+      - hhunter
+  - filename: pkg/tools/python/python.go
+    words:
+      - venv
+  - filename: pkg/spin/run.go
+    words:
+      - errored
+  - filename: pkg/project/framework_service_python.go
+    words:
+      - __pycache__
+      - Venv
+  - filename: pkg/project/project_test.go
+    words:
+      - Aapi
+      - Aweb
+      - Aworker
+      - azdtempl
+  - filename: pkg/executil/executil_windows.go
+    words:
+      - hndl
+      - JOBOBJECT
+  - filename: pkg/environment/azdcontext/azdcontext.go
+    words:
+      - ents
+      - unmarshalled
+  - filename: pkg/exec/util_test.go
+    words:
+      - keychain
+      - crusername
+      - azurecr
+  - filename: pkg/tools/dotnet/dotnet.go
+    words:
+      - PWORD
+  - filename: pkg/tools/kubectl/kubectl.go
+    words:
+      - tmpl
+  - filename: pkg/experimentation/assignment.go
+    words:
+      - assignmentcache
+      - machineid
+      - azdversion
+  - filename: pkg/experimentation/client.go
+    words:
+      - variantassignment
+  - filename: pkg/azsdk/storage/storage_blob_client.go
+    words:
+      - azblob
+  - filename: pkg/project/service_target_aks.go
+    words:
+      - kustomization
+      - templating
+  - filename: CHANGELOG.md
+    words:
+      - aistudio
+      - apiserver
+      - azdevify
+      - creds
+      - Moby
+      - upsert
+  - filename: docs/proxy-configuration.md
+    words:
+      - Telerik
+  - filename: test/functional/testdata/samples/funcapp/getting_started.md
+    words:
+      - funcignore
+ignorePaths:
+  - "**/*_test.go"
+  - "**/mock*.go"

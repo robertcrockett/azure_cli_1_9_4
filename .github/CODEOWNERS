@@ -1,0 +1,21 @@
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#codeowners-syntax
+
+/**               @ellismg @wbreza
+
+/cli/             @ellismg @wbreza @vhvb1989 @hemarina @weikanglim
+/cli/installer/   @ellismg @danieljurek
+
+/ext/             @karolz-ms @ellismg
+
+/generators/repo/ @wbreza @ellismg @danieljurek
+
+/.github/         @danieljurek @ellismg
+
+/eng/             @danieljurek @ellismg
+
+/schemas/         @karolz-ms @ellismg @wbreza
+
+/templates/       @jongio @wbreza
+
+# Exclude @jongio from version bump PRs opened by dependabot
+/templates/**/package-lock.json     @wbreza
